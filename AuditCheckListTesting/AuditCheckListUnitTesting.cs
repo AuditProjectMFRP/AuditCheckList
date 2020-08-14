@@ -22,12 +22,28 @@ namespace AuditCheckListTesting
             AuditCheckListController Controller = new AuditCheckListController();
             var ControllerOutput = Controller.GetAuditCheckListQuestions(AuditType);
             var result = ControllerOutput.Result as BadRequestObjectResult;
+
             //Assert
             Assert.AreEqual(400, result.StatusCode);
             Assert.AreEqual("Invalid Input(Please Enter valid AuditTpe)", result.Value);
         }
 
-   
+        [Test]
+        public void GetAuditCheckListQuestions_WhenNoInputIsPassed_ReturnsBadRequest()
+        {
+            //Arrange
+            string AuditType = null;
+
+            //Act
+            AuditCheckListController Controller = new AuditCheckListController();
+            var ControllerOutput = Controller.GetAuditCheckListQuestions(AuditType);
+            var result = ControllerOutput.Result as BadRequestObjectResult;
+
+            //Assert
+            Assert.AreEqual(400, result.StatusCode);
+            Assert.AreEqual("Enter AuditType to run this service", result.Value);
+        }
+
 
         [Test]
         public void GetAuditCheckListQuestions_WhenAuditTypeIsInternal_ReturnsListOfInternalTypeAuditQuestions()
@@ -40,7 +56,7 @@ namespace AuditCheckListTesting
             InternalQuestion.Add("Are all artifacts like CR document, Unit test cases available?");
             InternalQuestion.Add("Is the SIT and UAT sign-off available?");
             InternalQuestion.Add("Is data deletion from the system done with application owner approval?");
-           
+
             //Act
             AuditCheckListController Controller = new AuditCheckListController();
             var ControllerListOfQuestion = Controller.GetAuditCheckListQuestions(AuditType);
@@ -63,16 +79,16 @@ namespace AuditCheckListTesting
             SOXQuestion.Add("For a major change, was there a database backup taken before and after PROD move?");
             SOXQuestion.Add("Has the application owner approval obtained while adding a user to the system?");
             SOXQuestion.Add("Is data deletion from the system done with application owner approval?");
-            
+
             //Act
             AuditCheckListController Controller = new AuditCheckListController();
             var ControllerListOfQuestion = Controller.GetAuditCheckListQuestions(AuditType);
             var Result = ControllerListOfQuestion.Result as OkObjectResult;
 
             //Assert
-            Assert.AreEqual(200,Result.StatusCode);
+            Assert.AreEqual(200, Result.StatusCode);
             Assert.AreEqual(SOXQuestion, Result.Value);
 
         }
-   }
+    }
 }

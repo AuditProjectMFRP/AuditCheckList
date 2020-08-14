@@ -113,3 +113,25 @@ INFO  11:21:45  14:08:2020 Content root path: C:\Users\Rahul\Desktop\gitpush\Aud
 ERROR 11:22:46  14:08:2020 AuditCheckList Invoked with null Input
 ERROR 11:22:52  14:08:2020 AuditChceklist Get Method invoked with Invalid AuditType
 INFO  11:23:00  14:08:2020 AuditChceklist Get Method invoked with internal AuditType
+INFO  12:30:21  14:08:2020 Application started. Press Ctrl+C to shut down.
+INFO  12:30:21  14:08:2020 Hosting environment: Development
+INFO  12:30:21  14:08:2020 Content root path: C:\Users\Rahul\Desktop\gitpush\AuditCheckList-master\AuditCheckList
+INFO  12:30:57  14:08:2020 Application started. Press Ctrl+C to shut down.
+INFO  12:30:57  14:08:2020 Hosting environment: Development
+INFO  12:30:57  14:08:2020 Content root path: C:\Users\Rahul\Desktop\gitpush\AuditCheckList-master\AuditCheckList
+ERROR 12:31:45  14:08:2020 AuditCheckList Invoked with null Input
+ERROR 12:32:08  14:08:2020 AuditCheckList Invoked with null Input
+ERROR 12:32:57  14:08:2020 AuditChceklist Get Method invoked with Invalid AuditType
+INFO  12:33:41  14:08:2020 AuditChceklist Get Method invoked with sox AuditType
+INFO  12:34:22  14:08:2020 AuditChceklist Get Method invoked with SOX AuditType
+INFO  12:34:42  14:08:2020 AuditChceklist Get Method invoked with internal AuditType
+INFO  12:34:59  14:08:2020 AuditChceklist Get Method invoked with Internal AuditType
+INFO  01:41:52  14:08:2020 Application started. Press Ctrl+C to shut down.
+INFO  01:41:52  14:08:2020 Hosting environment: Development
+INFO  01:41:52  14:08:2020 Content root path: C:\Users\Rahul\Desktop\gitpush\AuditCheckList-master\AuditCheckList
+ERROR 01:43:02  14:08:2020 AuditCheckList Invoked with null Input
+INFO  01:43:11  14:08:2020 AuditChceklist Get Method invoked with internal AuditType
+INFO  01:47:08  14:08:2020 Application started. Press Ctrl+C to shut down.
+INFO  01:47:08  14:08:2020 Hosting environment: Development
+INFO  01:47:08  14:08:2020 Content root path: C:\Users\Rahul\Desktop\gitpush\AuditCheckList-master\AuditCheckList
+ERROR 01:47:58  14:08:2020 AuditCheckList Invoked with null Input

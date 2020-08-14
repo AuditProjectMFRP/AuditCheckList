@@ -19,6 +19,7 @@ namespace AuditCheckList.Controllers
         [HttpGet]
         [Authorize]
         [ProducesResponseType(200)]
+        
         [ProducesResponseType(400)]
         [ProducesResponseType(401)]
         public  ActionResult<List<string>> GetAuditCheckListQuestions(string AuditType)
