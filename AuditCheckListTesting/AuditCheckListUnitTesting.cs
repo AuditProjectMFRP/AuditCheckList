@@ -22,12 +22,12 @@ namespace AuditCheckListTesting
             AuditCheckListController Controller = new AuditCheckListController();
             var ControllerOutput = Controller.GetAuditCheckListQuestions(AuditType);
             var result = ControllerOutput.Result as BadRequestObjectResult;
-            
-
             //Assert
             Assert.AreEqual(400, result.StatusCode);
-            Assert.AreEqual("Invalid Input", result.Value);
+            Assert.AreEqual("Invalid Input(Please Enter valid AuditTpe)", result.Value);
         }
+
+   
 
         [Test]
         public void GetAuditCheckListQuestions_WhenAuditTypeIsInternal_ReturnsListOfInternalTypeAuditQuestions()

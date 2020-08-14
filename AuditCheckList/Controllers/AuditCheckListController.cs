@@ -17,7 +17,7 @@ namespace AuditCheckList.Controllers
         }
         
         [HttpGet]
-        [Authorize]
+ //       [Authorize]
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
         [ProducesResponseType(401)]
@@ -25,11 +25,17 @@ namespace AuditCheckList.Controllers
         {
             List<string> Question = new List<string>();
 
-              if (!AuditType.Equals("internal", StringComparison.InvariantCultureIgnoreCase)           //for invalid input type
+            if (AuditType == null)
+            {
+                _log4net.Error("AuditCheckList Invoked with null Input");                            //for null input
+                return BadRequest("Enter AuditType to run this service");
+            }
+
+            if (!AuditType.Equals("internal", StringComparison.InvariantCultureIgnoreCase)           //for invalid input type
                    && !AuditType.Equals("sox", StringComparison.InvariantCultureIgnoreCase))
             {
-                _log4net.Info($"AuditChceklist Get Method invoked with Invalid AuditType");                              
-                return BadRequest("Invalid Input");                                                            
+                _log4net.Error("AuditChceklist Get Method invoked with Invalid AuditType");                              
+                return BadRequest("Invalid Input(Please Enter valid AuditTpe)");                                                            
             }
 
             _log4net.Info($"AuditChceklist Get Method invoked with {AuditType} AuditType");

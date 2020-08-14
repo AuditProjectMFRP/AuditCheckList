@@ -96,3 +96,20 @@ INFO  11:17:12  09:08:2020 Application started. Press Ctrl+C to shut down.
 INFO  11:17:12  09:08:2020 Hosting environment: Development
 INFO  11:17:12  09:08:2020 Content root path: C:\Users\Rahul\Desktop\gitpush\AuditCheckList-master\AuditCheckList
 INFO  11:19:50  09:08:2020 AuditChceklist Get Method invoked with Internal AuditType
+INFO  10:24:31  12:08:2020 Application started. Press Ctrl+C to shut down.
+INFO  10:24:31  12:08:2020 Hosting environment: Development
+INFO  10:24:31  12:08:2020 Content root path: C:\Users\Rahul\Desktop\gitpush\AuditCheckList-master\AuditCheckList
+INFO  10:24:44  12:08:2020 AuditChceklist Get Method invoked with Invalid AuditType
+INFO  10:28:36  12:08:2020 Application started. Press Ctrl+C to shut down.
+INFO  10:28:36  12:08:2020 Hosting environment: Development
+INFO  10:28:36  12:08:2020 Content root path: C:\Users\Rahul\Desktop\gitpush\AuditCheckList-master\AuditCheckList
+INFO  10:30:53  12:08:2020 Application started. Press Ctrl+C to shut down.
+INFO  10:30:53  12:08:2020 Hosting environment: Development
+INFO  10:30:53  12:08:2020 Content root path: C:\Users\Rahul\Desktop\gitpush\AuditCheckList-master\AuditCheckList
+INFO  10:31:07  12:08:2020 AuditChceklist Get Method invoked with Invalid AuditType
+INFO  11:21:45  14:08:2020 Application started. Press Ctrl+C to shut down.
+INFO  11:21:45  14:08:2020 Hosting environment: Development
+INFO  11:21:45  14:08:2020 Content root path: C:\Users\Rahul\Desktop\gitpush\AuditCheckList-master\AuditCheckList
+ERROR 11:22:46  14:08:2020 AuditCheckList Invoked with null Input
+ERROR 11:22:52  14:08:2020 AuditChceklist Get Method invoked with Invalid AuditType
+INFO  11:23:00  14:08:2020 AuditChceklist Get Method invoked with internal AuditType
